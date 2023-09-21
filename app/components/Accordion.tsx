@@ -43,7 +43,7 @@ const Accordion = ({ workPlaces }: workPlacesProps) => {
             <div className="">{item.timeFrame}</div>
           </div>
           {activeIndex === index && (
-            <p className="p-4 text-gray-300">{item.work}</p>
+            <p className="p-4 text-[#F8F6EE]">{item.work}</p>
           )}
         </div>
       ))}
