@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
           {/* copyright */}
           <div className="text-[14px] text-center lg:text-left font-normal">
-            ©2023 Developed by Tega Okorare — Developed in Next.js
+            ©2023 Developed by Tega Okorare - Next.js | Tailwind Css | Sanity.io
           </div>
         </div>
         <div className="space-y-3">
