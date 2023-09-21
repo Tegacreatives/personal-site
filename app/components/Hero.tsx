@@ -10,7 +10,7 @@ const Hero = () => {
           <span className="font-semibold text-[14px]">Available for Work</span>
         </div>
         {/* Title */}
-        <div className="text-center text-[43px] md:text-[88px] font-normal">
+        <div className="text-center text-[43px] md:text-[88px] leading-[44px] lg:leading-[94px] font-normal">
           <h1>Okorare Tega</h1>
           <h1 className="text-[#ACA0E8]">Software Engineer</h1>
         </div>
