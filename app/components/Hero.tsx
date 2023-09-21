@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
         {/* Title */}
         <div className="text-center text-[43px] md:text-[88px] leading-[44px] lg:leading-[94px] font-normal">
-          <h1>Okorare Tega</h1>
+          <h1>Tega Okorare</h1>
           <h1 className="text-[#ACA0E8]">Software Engineer</h1>
         </div>
         {/* Info */}
