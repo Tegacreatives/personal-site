@@ -1,14 +1,12 @@
 import React from "react";
+import WorkStatus from "./common/WorkStatus";
 
 const Hero = () => {
   return (
     <section className="flex flex-col items-center space-y-16">
       <div className="flex flex-col items-center space-y-4">
         {/* Work status */}
-        <div className="flex space-x-2 items-center border rounded-3xl px-[14px] py-[10px]">
-          <div className="w-[10px] h-[10px] bg-[#51FF51] rounded-full"></div>
-          <span className="font-semibold text-[14px]">Available for Work</span>
-        </div>
+        <WorkStatus />
         {/* Title */}
         <div className="text-center text-[38px] sm:text-[43px] md:text-[88px] leading-[44px] md:leading-[85px] lg:leading-[94px] font-normal">
           <h1>Tega Okorare</h1>
