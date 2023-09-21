@@ -1,27 +1,36 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
 import React from "react";
 import Title from "./common/Title";
+import { client } from "@/utils/sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
 
-const projects = [
-  {
-    title: "Parons Technology",
-    image: "/project1.svg",
-  },
-  {
-    title: "Pixel Perfection",
-    image: "/project2.svg",
-  },
-  {
-    title: "Vineyards of Temecula",
-    image: "/project3.svg",
-  },
-  {
-    title: "Cruzin Agency",
-    image: "/project4.svg",
-  },
-];
+const builder = imageUrlBuilder(client);
 
-const Work = () => {
+function urlFor(source: {}) {
+  return builder.image(source);
+}
+
+interface ProjectProps {
+  _id: string;
+  title: string;
+  slug: {
+    current: string;
+  };
+  coverPhoto: {
+    asset: "string";
+  };
+}
+
+async function getProject() {
+  const query = `*[_type == "project"]`;
+  const data = await client.fetch(query);
+  return data as ProjectProps[];
+}
+
+const Work = async () => {
+  const projects = (await getProject()) as ProjectProps[];
   return (
     <div className="flex flex-col w-full py-12">
       {/* section title */}
@@ -32,7 +41,7 @@ const Work = () => {
           <div className="cursor-pointer group" key={index}>
             <div className="relative">
               <Image
-                src={project.image}
+                src={urlFor(project.coverPhoto).url()}
                 alt="download"
                 className="w-full"
                 width={350}
