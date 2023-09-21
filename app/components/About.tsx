@@ -6,13 +6,16 @@ const About = () => {
   return (
     <section className="py-16">
       <Title title="About Me" />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div
-          className="bg-cover min-h-[500px]"
-          style={{
-            backgroundImage: "url('./assets/headshot.png')",
-          }}
-        ></div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8">
+        <div className="relative h-[600px] lg:h-full w-full">
+          <Image
+            src="/assets/headshot.png"
+            alt="profile-image"
+            priority
+            className="w-full max-h-[70vh]"
+            fill
+          />
+        </div>
         <div className="space-y-10">
           <div className="text-[26px] lg:text-[44px] font-normal lg:leading-[51.9px]">
             <span className="text-[#ACA0E8]">Hola!</span> My name is Tega
