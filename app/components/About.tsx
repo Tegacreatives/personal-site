@@ -8,7 +8,7 @@ const About = () => {
       <Title title="About Me" />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div
-          className="bg-cover min-h-[420px] md:min-h-[500px]"
+          className="bg-cover min-h-[330px] sma:min-h-[420px] md:min-h-[500px]"
           style={{
             backgroundImage: "url('./assets/tega.jpg')",
           }}
