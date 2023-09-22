@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./common/Title";
-import Image from "next/image";
 import Accordion from "./Accordion";
 
 const workPlaces = [
