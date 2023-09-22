@@ -16,21 +16,21 @@ const About = () => {
         <div className="space-y-10">
           <div className="text-[26px] lg:text-[44px] font-normal lg:leading-[51.9px]">
             <span className="text-[#ACA0E8]">Hola!</span> My name is Tega
-            Okorare, a developer with a passion for all things craft. I am
-            currently working as a remote freelancer.
+            Okorare, a developer with a passion for building scalable and
+            accessible web experiences and products.
           </div>
           <div className="text-[18px] font-normal">
             Currently based somewhere on earth, I&apos;ve had the privilege of
-            working with clients from around the world. This global perspective
-            has enriched my design sensibilities and exposed me to diverse
-            cultures and influences, which I incorporate into my work to create
-            designs with a universal appeal.
+            working with multiple clients and companies. These experiences have
+            shaped me into striving for simplicity and clarity in my work while
+            finding ways to solve the challenging tasks it takes to build a
+            product that puts a smile on the end user&apos;s face.
           </div>
           <div className="text-[18px] font-normal">
-            Whether you&apos;re an entrepreneur, a small business owner, or a
-            fellow creative seeking a design partner, I&apos;m excited to embark
-            on this creative journey with you. Let&apos;s collaborate and bring
-            your vision to life!
+            On the side I do enjoy building small and large personal projects as
+            a chance to learn new technologies and break things. When I&apos;m
+            not building or trying to break things It&apos;s either moives,
+            books or music like most other people, I think.
           </div>
         </div>
       </div>

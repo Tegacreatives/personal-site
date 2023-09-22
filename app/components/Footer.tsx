@@ -47,7 +47,7 @@ const Footer = () => {
             </a>
           </button>
           <div className="text-[14px] font-normal">
-            Click to copy email address 👆
+            Got something for me? 👆
           </div>
         </div>
       </div>

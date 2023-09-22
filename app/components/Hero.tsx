@@ -14,9 +14,9 @@ const Hero = () => {
         </div>
         {/* Info */}
         <div className="text-center font-normal text-[18px]">
-          Now actively seeking new opportunities, I call the picturesque town of
-          Encinitas, CA my home base. <br /> When I&apos;m not immersed in the
-          world of design, you&apos;ll find me riding the waves. 🏄
+          Actively seeking different ways to build better, scalable and engaging
+          web and mobile experiences. <br /> Although I&apos;m frontend focused,
+          I somtimes love to dig into the world of backend development
         </div>
       </div>
       {/* Email button */}
@@ -26,9 +26,7 @@ const Hero = () => {
             contact@tegacreatives.com
           </a>
         </button>
-        <div className="text-[14px] font-normal">
-          Click to copy email address 👆
-        </div>
+        <div className="text-[14px] font-normal">Got something for me? 👆</div>
       </div>
     </section>
   );
