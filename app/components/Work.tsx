@@ -37,7 +37,7 @@ const Work = async () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 space-y-2 lg:space-y-0">
         {projects.map((project, index) => (
           <div className="cursor-pointer group" key={index}>
-            <div className="relative w-full h-[364px] md:h-[564px] lg:h-[30vw]">
+            <div className="relative w-full h-[254px] sm:h-[364px] md:h-[564px] lg:h-[30vw]">
               <Image
                 src={urlFor(project.coverPhoto).url()}
                 alt="download"
