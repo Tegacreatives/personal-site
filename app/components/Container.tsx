@@ -13,7 +13,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
-  return <div className="max-w-[1364px]">{children}</div>;
+  return <div>{children}</div>;
 };
 
 export default Container;
