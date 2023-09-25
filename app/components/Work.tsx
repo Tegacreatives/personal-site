@@ -41,7 +41,7 @@ const Work = async () => {
       {/* portfolio projects */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 space-y-2 lg:space-y-0">
         {projects.map((project, index) => (
-          <Link key={index} href={`project/${project.slug.current}`} prefetch>
+          <Link key={index} href={`project/${project.slug.current}`}>
             <div className="cursor-pointer group">
               <div className="relative w-full h-[254px] sm:h-[364px] md:h-[564px] lg:h-[30vw]">
                 <Image

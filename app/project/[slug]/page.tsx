@@ -44,7 +44,6 @@ async function getProject(slug: string) {
       revalidate: 3,
     },
   });
-  console.log(data);
   return data;
 }
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
