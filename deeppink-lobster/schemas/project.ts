@@ -19,7 +19,33 @@ export default defineType({
         maxLength: 96,
       },
     }),
-
+    defineField({
+      name: 'about',
+      title: 'About',
+      type: 'text',
+    }),
+    defineField({
+      name: 'liveLink',
+      title: 'Live Link',
+      type: 'string',
+    }),
+    defineField({
+      name: 'github',
+      title: 'Github',
+      type: 'string',
+    }),
+    defineField({
+      name: 'services',
+      title: 'Services Provided',
+      type: 'array',
+      of: [{type: 'string'}],
+    }),
+    defineField({
+      name: 'technologies',
+      title: 'Technologies',
+      type: 'array',
+      of: [{type: 'string'}],
+    }),
     defineField({
       name: 'coverPhoto',
       title: 'Cover Photo',
@@ -40,9 +66,17 @@ export default defineType({
       type: 'blockContent',
     }),
     defineField({
-      name: 'about',
-      title: 'About',
-      type: 'text',
+      name: 'showcase',
+      title: 'Showcase',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     }),
   ],
 
