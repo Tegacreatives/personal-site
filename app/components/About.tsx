@@ -16,7 +16,7 @@ const About = () => {
         <div className="space-y-10">
           <div className="text-[26px] lg:text-[44px] font-normal lg:leading-[51.9px]">
             <span className="text-[#ACA0E8]">Hola!</span> My name is Tega
-            Okorare, a developer with a passion for building scalable and
+            Okorare, a developer with a focus on building scalable and
             accessible web experiences and products.
           </div>
           <div className="text-[18px] font-normal">
