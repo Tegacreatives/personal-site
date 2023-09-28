@@ -5,7 +5,7 @@ interface workPlaceItem {
   company: string;
   role: string;
   timeFrame: string;
-  work: string;
+  work: string[];
 }
 
 interface workPlacesProps {
@@ -43,7 +43,13 @@ const Accordion = ({ workPlaces }: workPlacesProps) => {
             <div className="">{item.timeFrame}</div>
           </div>
           {activeIndex === index && (
-            <p className="p-4 text-[#F8F6EE]">{item.work}</p>
+            <ul className="space-y-3 md:space-y-2 pb-2">
+              {item.work.map((task, index) => (
+                <li key={index} className="text-[#F8F6EE]">
+                  {task}
+                </li>
+              ))}
+            </ul>
           )}
         </div>
       ))}

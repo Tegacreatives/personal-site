@@ -20,11 +20,10 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    181deg,
+    rgb(5, 15, 27) 15%,
+    rgb(1, 30, 69) 158.5%
+  );
 }
 
 html.lenis {

@@ -19,6 +19,7 @@ interface ProjectProps {
   liveLink: string;
   github: string;
   technologies: string[];
+  showcase: string[];
   body: any;
 }
 
@@ -28,7 +29,7 @@ function urlFor(source: {}) {
   return builder.image(source);
 }
 
-const PortableTextComponent = {
+const PortableTextComponent: any = {
   types: {
     image: ({ value }: { value: any }) => (
       <Image
@@ -39,6 +40,19 @@ const PortableTextComponent = {
         height={720}
         priority
       />
+    ),
+  },
+  listItem: {
+    // Ex. 1: customizing common list types
+    bullet: ({ children }: { children: string }) => (
+      <li className="list-disc pb-2 text-lg lg:text-xl">{children}</li>
+    ),
+  },
+
+  block: {
+    // Customize block types with ease
+    h4: ({ children }: { children: string }) => (
+      <h4 className="pt-10 pb-2 text-2xl">{children}</h4>
     ),
   },
 };
@@ -56,10 +70,13 @@ async function getProject(slug: string) {
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   const data = (await getProject(params.slug)) as ProjectProps;
   return (
-    <div className="flex flex-col items-center max-w-[2180px] mx-[40px] md:mx-[80px] m-auto border-b-white border-b">
-      <div className="flex flex-col items-center justify-center text-center pb-16">
-        <div className="text-[88px]">{data.title}</div>
-        <div className="lg:max-w-[40vw]">{data.about}</div>
+    <div
+      className="flex flex-col max-w-[2180px] mx-[40px] md:mx-[100px] 
+    lg:mx-[180px] m-auto border-b-white border-b"
+    >
+      <div className="flex flex-col pb-16">
+        <div className="text-[40px] lg:text-[80px]">{data.title}</div>
+        <div className="lg:max-w-[80vw] lg:text-[30px]">{data.about}</div>
       </div>
       <div className="flex flex-row items-start justify-between w-full">
         <div className="underline">
@@ -89,7 +106,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
             src={urlFor(data.coverPhoto).url()}
             alt="download"
             className="rounded-lg py-4 w-full"
-            width={1200}
+            width={2200}
             height={800}
             priority
           />
@@ -97,6 +114,20 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       </div>
       <div className="pb-8 pt-1 prose text-[20px]">
         <PortableText value={data.body} components={PortableTextComponent} />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {data.showcase.map((item, index) => (
+          <div key={index} className="relative w-full">
+            <Image
+              src={urlFor(item).url()}
+              alt="download"
+              className="rounded-lg py-4 w-full"
+              width={2200}
+              height={800}
+              priority
+            />
+          </div>
+        ))}
       </div>
       <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 items-start w-full lg:space-x-44 py-10">
         <div className="text-[40px] lg:leading-7">Technologies</div>
