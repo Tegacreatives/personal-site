@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
 import Container from "./components/Container";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Work />
         <About />
+        <Skills />
         <Experience />
       </Container>
     </main>
