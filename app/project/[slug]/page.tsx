@@ -45,14 +45,14 @@ const PortableTextComponent: any = {
   listItem: {
     // Ex. 1: customizing common list types
     bullet: ({ children }: { children: string }) => (
-      <li className="list-disc pb-2 text-lg lg:text-xl">{children}</li>
+      <li className="list-disc pb-4 text-[18px]">{children}</li>
     ),
   },
 
   block: {
     // Customize block types with ease
     h4: ({ children }: { children: string }) => (
-      <h4 className="pt-10 pb-2 text-2xl">{children}</h4>
+      <h4 className="pt-10 pb-4 text-2xl">{children}</h4>
     ),
   },
 };
@@ -112,7 +112,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
       </div>
-      <div className="pb-8 pt-1 prose text-[20px]">
+      <div className="pb-8 pt-1 prose font-light text-[18px] text-gray-300">
         <PortableText value={data.body} components={PortableTextComponent} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
