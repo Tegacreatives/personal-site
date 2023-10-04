@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="text-center font-normal text-[18px]">
           Continuously exploring innovative ways to build better, scalable and
           engaging web and mobile experiences. <br /> Although I&apos;m frontend
-          focused, I somtimes love to dig into the world of backend development
+          focused, I sometimes love to dig into the world of backend development
         </div>
       </div>
       {/* Email button */}
