@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'deeppink-lobster',
 
-  projectId: 'cv1zk67h',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECTID as string,
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
