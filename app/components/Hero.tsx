@@ -10,7 +10,7 @@ const Hero = () => {
         {/* Title */}
         <div className="text-center text-[38px] sm:text-[43px] md:text-[88px] leading-[44px] md:leading-[85px] lg:leading-[94px] font-normal">
           <h1>Tega Okorare</h1>
-          <h1 className="text-[#F5F5DC]">Software Engineer</h1>
+          <h1 className="secondary-text">Software Engineer</h1>
         </div>
         {/* Info */}
         <div className="text-center font-normal text-[18px]">
@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       {/* Email button */}
       <div className="flex flex-col items-center space-y-3">
-        <button className="flex space-x-2 items-center rounded-3xl px-[16px] py-[12px] bg-[#F8F6EE] text-[#040404] text-[18px] font-semibold hover:bg-[#F5F5DC] transition">
+        <button className="flex space-x-2 items-center rounded-3xl px-[16px] py-[12px] text-[18px] font-semibold transition">
           <a href="mailto:contact@tegacreatives.com">
             contact@tegacreatives.com
           </a>

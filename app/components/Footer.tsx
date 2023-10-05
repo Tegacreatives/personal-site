@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         {/* Email button */}
         <div className="flex flex-col items-center space-y-3">
-          <button className="flex space-x-2 items-center rounded-3xl px-[16px] py-[12px] bg-[#F8F6EE] text-[#040404] text-[18px] font-semibold hover:bg-[#F5F5DC] transition">
+          <button className="flex space-x-2 items-center rounded-3xl px-[16px] py-[12px] text-[18px] font-semibold transition">
             <a href="mailto:contact@tegacreatives.com">
               contact@tegacreatives.com
             </a>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row items-center justify-between">
         {/* footer contact */}
-        <div className="text-[#F8F6EE] space-y-5 flex flex-col items-center lg:items-start">
+        <div className=" space-y-5 flex flex-col items-center lg:items-start">
           {/* social links */}
           <div className="flex space-x-5">
             {socials.map((item, index) => (

@@ -72,7 +72,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <div
       className="flex flex-col max-w-[2180px] mx-[40px] md:mx-[100px] 
-    lg:mx-[180px] m-auto border-b-white border-b"
+    lg:mx-[180px] m-auto portfolio-border border-b"
     >
       <div className="flex flex-col pb-16">
         <div className="text-[40px] lg:text-[80px]">{data.title}</div>
@@ -91,7 +91,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         </div>
         <div className="space-y-3 pb-10">
           <div className="text-[18px]">Services Provided</div>
-          <div className="text-white/70">
+          <div className="portfolio-color">
             <ul>
               {data.services.map((service, index) => (
                 <li key={index}>{service}</li>
@@ -112,7 +112,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
       </div>
-      <div className="pb-8 pt-1 prose font-light text-[18px] text-gray-300">
+      <div className="pb-8 pt-1 prose font-light text-[18px] portfolio-color">
         <PortableText value={data.body} components={PortableTextComponent} />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

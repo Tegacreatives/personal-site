@@ -3,27 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: linear-gradient(
+    181deg,
+    rgb(244, 251, 255) 15%,
+    rgb(208, 229, 255) 158.5%
+  );
+  --foreground: black;
+  --secondary-color: #016a70;
+  --button-background: #016a70;
+  --button-background-hover: #016a70;
+  --button-color: white;
+  --work-status-border: black;
+  --portfolio-color: black;
+  --portfolio-border-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --alternate-background: #000e1c;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+[data-theme="dark"] {
+  --background: linear-gradient(
     181deg,
     rgb(5, 15, 27) 15%,
     rgb(1, 30, 69) 158.5%
   );
+  --foreground: white;
+  --secondary-color: #f5f5dc;
+  --button-background: #f8f6ee;
+  --button-background-hover: #f5f5dc;
+  --button-color: #040404;
+  --work-status-border: white;
+  --portfolio-color: rgb(255 255 255 / 0.7);
+  --portfolio-border-color: white;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+button {
+  background: var(--button-background);
+  color: var(--button-color);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.work-status {
+  border-color: var(--work-status-border);
+}
+
+.portfolio-color {
+  color: var(--portfolio-color);
+}
+
+.portfolio-border {
+  border-color: var(--portfolio-border-color);
+}
+
+button:hover {
+  background: var(--button-background-hover);
 }
 
 html.lenis {

@@ -6,7 +6,7 @@ const workPlaces = [
   {
     company: "Nigeria LNG",
     role: "Digital Innovation Intern",
-    timeFrame: "2022",
+    timeFrame: "2022 - 2023",
     work: [
       "Developed user interface for a new internal project management tool.",
       "Participated in code reviews and provided feedback to other developers.",
@@ -15,7 +15,7 @@ const workPlaces = [
   },
   {
     company: "I.S.T.H",
-    role: "Technical Support Intern",
+    role: "Technical Support",
     timeFrame: "2021",
     work: [
       "Offered network troubleshooting assistance to staff members, ensuring minimal disruptions in daily operations.",
