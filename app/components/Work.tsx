@@ -39,11 +39,11 @@ const Work = async () => {
       {/* section title */}
       <Title title="View Works" />
       {/* portfolio projects */}
-      <div className="w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 space-y-2 lg:space-y-0">
         {projects.map((project, index) => (
           <Link key={index} href={`project/${project.slug.current}`}>
             <div className="cursor-pointer group">
-              <div className="relative w-full h-[254px] sm:h-[364px] md:h-[564px] lg:h-[56vw]">
+              <div className="relative w-full h-[254px] sm:h-[364px] md:h-[564px] lg:h-[30vw]">
                 <Image
                   src={urlFor(project.coverPhoto).url()}
                   alt="download"
