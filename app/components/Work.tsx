@@ -23,7 +23,7 @@ interface ProjectProps {
 }
 
 async function getProject() {
-  const query = `*[_type == "project"]`;
+  const query = `*[_type == "project"] | order(title asc)`;
   const data = await client.fetch(query, {
     next: {
       revalidate: 1500,
