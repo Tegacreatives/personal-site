@@ -26,7 +26,7 @@ async function getProject() {
   const query = `*[_type == "project"]`;
   const data = await client.fetch(query, {
     next: {
-      revalidate: 3600,
+      revalidate: 1500,
     },
   });
   return data as ProjectProps[];
