@@ -10,11 +10,11 @@ const socials = [
   },
   {
     title: "Linkedin",
-    socialUrl: "https://github.com/Tegacreatives",
+    socialUrl: "https://www.linkedin.com/in/okorare-tega-36008520b/",
   },
   {
     title: "Twitter",
-    socialUrl: "https://github.com/Tegacreatives",
+    socialUrl: "https://twitter.com/justtega_00",
   },
 ];
 
