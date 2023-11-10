@@ -12,10 +12,10 @@ const socials = [
     title: "Linkedin",
     socialUrl: "https://www.linkedin.com/in/okorare-tega-36008520b/",
   },
-  {
-    title: "Twitter",
-    socialUrl: "https://twitter.com/justtega_00",
-  },
+  // {
+  //   title: "Twitter",
+  //   socialUrl: "https://twitter.com/justtega_00",
+  // },
 ];
 
 const Footer = () => {
