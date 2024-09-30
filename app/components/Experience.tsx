@@ -44,7 +44,7 @@ const workPlaces = [
     timeFrame: "2020 - 2022",
     work: [
       "Provided network troubleshooting and resolved connectivity issues for over 100 staff members, reducing downtime by 20% and ensuring minimal disruption to daily operations.",
-      "Performed website updates and maintenance using WordPress and PHP, improving website loading times by 20% and ensuring content was mobile-friendly.",
+      "Performed website updates and maintenance using WordPress and PHP, improving website loading times by 14% and ensuring content was mobile-friendly.",
       "Implemented a regular backup schedule and performed data recovery for critical systems, safeguarding the organization against data loss and ensuring a 100% recovery success rate during incidents.",
     ],
   },
