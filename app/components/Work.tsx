@@ -23,7 +23,7 @@ interface ProjectProps {
 }
 
 async function getProject() {
-  const query = `*[_type == "project"] | order(title asc)`;
+  const query = `*[_type == "project" && mike != true] | order(title asc)`;
   const data = await client.fetch(query, {
     next: {
       revalidate: 1500,
@@ -34,7 +34,7 @@ async function getProject() {
 
 const Work = async () => {
   const projects = (await getProject()) as ProjectProps[];
-  // console.log(projects[0].slug);
+  console.log(projects);
   return (
     <div className="flex flex-col w-full py-12">
       {/* section title */}

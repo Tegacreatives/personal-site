@@ -25,6 +25,11 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'mike',
+      title: 'Mike',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'liveLink',
       title: 'Live Link',
       type: 'string',
