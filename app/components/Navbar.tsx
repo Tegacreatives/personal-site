@@ -14,7 +14,7 @@ const Navbar = () => {
           <a
             target="_blank"
             download
-            href="https://drive.google.com/file/d/1lylZXC4cvHe9O5962mYMn4z2Zt_WaQzg/view"
+            href="https://drive.google.com/file/d/1I0PKtTVfmH3UJR_1v7kqHa4-f43IXriq/view?usp=sharing"
           >
             Resume
           </a>
