@@ -34,7 +34,7 @@ async function getProject() {
 
 const Work = async () => {
   const projects = (await getProject()) as ProjectProps[];
-  console.log(projects);
+
   return (
     <div className="flex flex-col w-full py-12">
       {/* section title */}
