@@ -2,16 +2,16 @@ import React from "react";
 import Title from "./common/Title";
 
 const skills = [
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "React",
-  "Next.js",
+  "JavaScript | Typescript",
+  "React | Next.js",
   "Node.js",
-  "PostgreSQL",
-  "Cypress",
+  "Postgres",
+  "AWS",
+  "Terraform",
+  "Docker",
+  "Kubernetes",
   "TailwindCss",
-  "API Testing",
-  "Learning Go",
+  "Golang",
 ];
 
 const Skills = () => {

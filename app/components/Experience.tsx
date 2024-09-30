@@ -4,13 +4,27 @@ import Accordion from "./Accordion";
 
 const workPlaces = [
   {
-    company: "Rooks",
+    company: "Mastersoft Technology",
     role: "Full-Stack Developer",
-    timeFrame: "2022 - Current",
+    timeFrame: "2023 - Current",
     work: [
-      "Developed responsive e-commerce platform with over 200 users",
-      "Integrated secure payment gateway for seamless and secure payments",
-      "Implemented robust error handling for third-party APIs",
+      "Developed and maintained 5+ web applications using React, Node.js, and Postgres, improving client satisfaction rates by 25%",
+      "Led a team of 4 developers in delivering an LMS platform, completing the project 2 weeks ahead of schedule and 10% under budget",
+      "Implemented CI/CD pipelines using Jenkins, reducing deployment time by 40% and improving code quality",
+      "Organized and conducted monthly training sessions on modern web development for trainees",
+      "Optimized database queries and implemented caching strategies, resulting in a 50% reduction in average page load time",
+    ],
+  },
+  {
+    company: "Rooks (Part-Time)",
+    role: "Co-founder & Full-Stack Developer",
+    timeFrame: "2022 - 2023",
+    work: [
+      "Co-founded and developed an e-commerce platform from the ground up, attracting over 100 active users within the first 3 months of launch",
+      "Designed and implemented the full technology stack using React for frontend and Node.js for backend ensuring scalability for future growth",
+      "Integrated Paystack as a secure payment gateway, ensuring PCI compliance and enabling seamless transactions, which resulted in a 95% success rate in payment processing.",
+      "Developed a robust error-handling mechanism for third-party API interactions, reducing error rates by 20% and improving overall system reliability.",
+      "Gained hands-on experience in business operations, including customer service, marketing, and financial management",
     ],
   },
   {
@@ -18,9 +32,10 @@ const workPlaces = [
     role: "Digital Innovation Intern",
     timeFrame: "2022",
     work: [
-      "Developed user interface for a new internal project management tool.",
-      "Participated in code reviews and provided feedback to other developers.",
-      "Streamlined analysis processes by migrating critical calculations from Excel to Python.",
+      "Developed a user interface for an internal project management tool using React and Bootstrap, improving team collaboration and reducing project delays by 15%.",
+      "Participated in bi-weekly code reviews with senior developers, providing feedback to improve code quality and adherence to best practices.",
+      "Migrated critical financial calculations from Excel to Python, reducing analysis time by 30% and enhancing data accuracy, allowing the finance department to make quicker, more informed decisions.",
+      "Collaborated with cross-functional teams, including business analysts and project managers, to gather requirements and ensure the tool met the specific needs of each department.",
     ],
   },
   {
@@ -28,12 +43,11 @@ const workPlaces = [
     role: "Technical Support",
     timeFrame: "2020 - 2022",
     work: [
-      "Offered network troubleshooting assistance to staff members, ensuring minimal disruptions in daily operations.",
-      "Performed website updates and maintenance, contributing to an up-to-date and user-friendly online presence for the organization.",
+      "Provided network troubleshooting and resolved connectivity issues for over 100 staff members, reducing downtime by 20% and ensuring minimal disruption to daily operations.",
+      "Performed website updates and maintenance using WordPress and PHP, improving website loading times by 20% and ensuring content was mobile-friendly.",
+      "Implemented a regular backup schedule and performed data recovery for critical systems, safeguarding the organization against data loss and ensuring a 100% recovery success rate during incidents.",
     ],
   },
-
-  // Add more Experience items here
 ];
 const Experience = () => {
   return (
